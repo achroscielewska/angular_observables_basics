@@ -1,0 +1,11 @@
+<div *ngIf="books.length > 0">
+  <mat-card *ngFor="let book of books">
+    <h2>
+      {{ book.title }}
+    </h2>
+    <p> {{ book.bookshelfNo }}</p>
+
+    <p> {{ book.description }}</p>
+  </mat-card>
+</div>
+<p class="mat-body-1" *ngIf="books.length <= 0">No book added yet</p>

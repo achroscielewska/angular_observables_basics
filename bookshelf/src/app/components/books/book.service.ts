@@ -12,7 +12,7 @@ export class BookService {
     return [...this.books];
   }
 
-  geBooksUpdateListener() {
+  getBooksUpdateListener() {
     return this.booksUpdated.asObservable();
   }
 

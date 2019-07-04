@@ -11,6 +11,15 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 `app-header` - display header app
 
+#### books
+
+`app-book-create` - new book form
+`app-book-list` - display books list
+
+`Book` - book interface
+`BookService` - book service
+methods added to service: getBooks, getBooksUpdateListener, addBook
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

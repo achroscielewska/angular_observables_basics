@@ -10,12 +10,14 @@ import { MatButtonModule, MatInputModule, MatCardModule, MatToolbarModule, MatEx
 
 import { HeaderComponent } from './components/header/header.component';
 import { BookCreateComponent } from './components/books/book-create/book-create.component';
+import { BookListComponent } from './components/books/book-list/book-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    BookCreateComponent
+    BookCreateComponent,
+    BookListComponent
   ],
   imports: [
     BrowserModule,
