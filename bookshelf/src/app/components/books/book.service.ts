@@ -8,15 +8,15 @@ export class BookService {
   private books: Book[] = [];
   private booksUpdated = new Subject<Book[]>();
 
-  getPosts() {
+  getBooks() {
     return [...this.books];
   }
 
-  getPostUpdateListener() {
+  geBooksUpdateListener() {
     return this.booksUpdated.asObservable();
   }
 
-  addPost(book: Book) {
+  addBook(book: Book) {
     this.books.push(book);
     this.booksUpdated.next([...this.books]);
   }
