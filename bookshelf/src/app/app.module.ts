@@ -9,11 +9,13 @@ import { AppComponent } from './app.component';
 import { MatButtonModule, MatInputModule, MatCardModule, MatToolbarModule, MatExpansionModule } from '@angular/material';
 
 import { HeaderComponent } from './components/header/header.component';
+import { CreateBookComponent } from './components/books/create-book/create-book.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    CreateBookComponent
   ],
   imports: [
     BrowserModule,

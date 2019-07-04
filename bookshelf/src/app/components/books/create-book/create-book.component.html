@@ -1,0 +1,16 @@
+<mat-card>
+  <form (submit)="addBook(bookForm)" #bookForm="ngForm">
+    <mat-form-field>
+      <input matInput type="text" ngModel name="title" placeholder="title" required #title>
+    </mat-form-field>
+    <mat-form-field>
+      <textarea matInput col="30" rows="6" ngModel name="description" placeholder="description" required
+        #description></textarea>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput type="text" ngModel name="bookshelfNo" placeholder="bookshelfNo" required #title>
+    </mat-form-field>
+    <button mat-button type="submit" color="primary">SAVE BOOK</button>
+  </form>
+
+</mat-card>
