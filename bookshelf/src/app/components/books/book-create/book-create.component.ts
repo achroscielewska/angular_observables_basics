@@ -5,11 +5,11 @@ import { BookService } from '../book.service';
 import { Book } from '../book.model';
 
 @Component({
-  selector: 'app-create-book',
-  templateUrl: './create-book.component.html',
-  styleUrls: ['./create-book.component.scss']
+  selector: 'app-book-create',
+  templateUrl: './book-create.component.html',
+  styleUrls: ['./book-create.component.scss']
 })
-export class CreateBookComponent implements OnInit {
+export class BookCreateComponent implements OnInit {
 
   constructor(public bookService: BookService) { }
 
