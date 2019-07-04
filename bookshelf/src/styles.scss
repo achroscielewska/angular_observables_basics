@@ -19,3 +19,13 @@ $www-theme: mat-light-theme($www-primary, $www-accent, $www-warn);
 
 $roboto: mat-typography-config($font-family: 'Roboto');
 @include mat-select-typography($roboto);
+
+body {
+  margin: 0;
+  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+}
+
+/* angular material overwrites */
+mat-card-content {
+  margin: 0 40px;
+}
