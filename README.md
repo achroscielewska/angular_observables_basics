@@ -9,16 +9,25 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ### Components
 #### header
 
-`app-header` - display header app
+* `app-header` - display header app
 
 #### books
 
-`app-book-create` - new book form
-`app-book-list` - display books list
+* `app-book-create` - new book form
+* `app-book-list` - display books list
 
-`Book` - book interface
-`BookService` - book service
+* `Book` - book interface
+* `BookService` - book service
 methods added to service: getBooks, getBooksUpdateListener, addBook
+
+## Basic task for books components
+
+1. create `Book` interface
+2. create `BookService`, add method `addBook`
+3. create `app-book-create` component with `addBook()` method and connect it to `BookService`
+4. in `BookService`, add method `getBooks` and `getBooksUpdateListener` (use observable to define it)
+5.  create `app-book-list` component and `ngOnInit` call methods `getBooks` - this one give you books list as is and call method `getBooksUpdateListener` this is subscription 
+6. in `app-book-list` component remember to add ngOnDestroy() method and unsubscibe subscription
 
 ## Development server
 
